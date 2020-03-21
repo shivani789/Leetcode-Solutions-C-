@@ -1,0 +1,28 @@
+class Solution {
+public:
+    vector<string> fizzBuzz(int n) {
+            vector<string> v;
+        for(int i=1;i<=n;i++)
+        {
+                string t;
+                 if(i%3==0 && i%5==0)
+                {
+                        t+="FizzBuzz";
+                         v.push_back(t);
+                }
+                else if(i%3==0)
+                {
+                t+="Fizz";
+                        v.push_back(t);
+                }
+                else if(i%5==0)
+                {
+                t+="Buzz";
+                         v.push_back(t);}
+                
+                else
+                   v.push_back(to_string(i));
+        }
+            return v;
+    }
+};
